@@ -1,0 +1,63 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		ArrayList<String> cifras = new ArrayList<String>();
+		ArrayList<String> mensagemdecodificada = new ArrayList<String>();
+		
+cifras.add("a");
+cifras.add("b");
+cifras.add("c");
+cifras.add("d");
+cifras.add("e");
+cifras.add("f");
+cifras.add("g");
+cifras.add("h");
+cifras.add("i");
+cifras.add("j");
+cifras.add("k");
+cifras.add("l");
+cifras.add("m");
+cifras.add("n");
+cifras.add("o");
+cifras.add("p");
+cifras.add("q");
+cifras.add("r");
+cifras.add("s");
+cifras.add("t");
+cifras.add("u");
+cifras.add("v");
+cifras.add("w");
+cifras.add("x");
+cifras.add("y");
+cifras.add("z");
+
+
+
+		System.out.println("Adicione seu código");
+		String codigo = sc.nextLine().toLowerCase();
+		System.out.println("Digite a quantidade de espaços");
+		int espaços = sc.nextInt();
+
+		if (espaços > 25) {
+			int a = espaços / 26;
+			for (int i = 0; i < a; i++) {
+				for (int b = 0; b < 26; b++) {
+					cifras.add(cifras.get(j));
+				}
+			}
+		}
+
+		for (int c = 0; c < codigo.length(); c++) {
+			String cifri = codigo.substring(c, c + 1);
+			int cesar = cifras.indexOf(letra);
+			implementocifra.add(cifras.get(cesar + espaços));
+		}
+		System.out.println(implementocifra);
+
+	}
+}
